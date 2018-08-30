@@ -9,7 +9,7 @@ export class UserService {
   }
 
   query() {
-    return this.http.get('http://localhost:3000/api/v1/user').map(res => {
+    return this.http.get('/api/v1/user').map(res => {
       return res.json();
     });
   }
